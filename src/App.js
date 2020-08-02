@@ -1,13 +1,18 @@
 import React from 'react'
 import Row from './Row'
+import Header from './Header'
+import Banner from './Banner'
 import requests from './requests'
 
 function App () {
   return (
     <div>
+      {/* <Header /> */}
+      <Banner />
       <Row
         title='Netflix Originals'
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow={true}
       />
       <Row title='Trending Now' fetchUrl={requests.fetchTrending} />
       <Row title='Top Rated' fetchUrl={requests.fetchTopRated} />
