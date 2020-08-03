@@ -1,0 +1,75 @@
+.logo-image {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 200px;
+  object-fit: contain;
+}
+
+.header-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.header-main-black {
+  background-color: #221f1f;
+}
+
+.login-logo {
+  width: 50px;
+  height: 100%;
+  margin-right: 50px;
+  margin-top: 35px;
+}
+
+.menu ul {
+  display: inline;
+}
+
+.menu ul li {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  margin-right: 50px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 450ms;
+}
+
+.dropdown-content p {
+  color: #fff;
+  padding: 12px 26px;
+  text-decoration: none;
+  display: block;
+  float: none;
+}
+
+.dropdown-link {
+  text-decoration: none;
+}
+
+.dropdown-content p:hover {
+  transform: scale(1.08);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  right: 1px;
+}

@@ -1,13 +1,14 @@
 import React from 'react'
-import Row from './Row'
-import Header from './Header'
-import Banner from './Banner'
-import requests from './requests'
+
+import Row from './components/Row'
+import Header from './components/Header'
+import Banner from './components/Banner'
+import requests from './api/requests'
 
 function App () {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Banner />
       <Row
         title='Netflix Originals'
